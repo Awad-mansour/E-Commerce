@@ -1,0 +1,20 @@
+.section-one-shop {
+  background-image: url(../images/Rectangle\ 1.png);
+  height: 70vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+  color: black; 
+}
+
+.section-one-shop h1 {
+  font-size: 3.5rem; 
+  margin-bottom: 10px; 
+}
+
+.section-one-shop span {
+  font-size: 1.2rem;
+}

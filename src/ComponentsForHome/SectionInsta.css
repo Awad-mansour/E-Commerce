@@ -1,0 +1,84 @@
+.sec-insta-home {
+  background-image: url(../images/Rectangle\ 17\ \(1\).png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  color: #333;
+  text-align: center;
+  height: 50vh;
+}
+
+.sec-insta-home h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.sec-insta-home p {
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+
+.sec-insta-home button {
+  background-color: #FAF4F4;
+  color: black;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  width: 200px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sec-insta-home button:hover {
+  background-color: #FF6347;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 768px) {
+  .sec-insta-home {
+    padding: 40px 20px;
+  }
+
+  .sec-insta-home h1 {
+    font-size: 2.5rem;
+  }
+
+  .sec-insta-home p {
+    font-size: 1.2rem;
+    max-width: 90%;
+  }
+
+  .sec-insta-home button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sec-insta-home {
+    padding: 30px 10px;
+  }
+
+  .sec-insta-home h1 {
+    font-size: 2rem;
+  }
+
+  .sec-insta-home p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .sec-insta-home button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

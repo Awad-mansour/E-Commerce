@@ -1,0 +1,49 @@
+
+
+.text-h3{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  opacity: 60%;
+}
+ 
+.pra-disc{
+  text-align: start;
+}
+.pra-disc p{
+  padding: 20px 0;
+  opacity: 60%;
+}
+
+.pic-disc{
+  display: flex;
+  gap: 20px;
+}
+.pic-disc div {
+  background-color: #FFF9E5;
+}
+
+@media (max-width: 768px) {
+  .pic-disc{
+    display: block;
+    overflow: hidden;
+  }
+  .pic-disc img{
+    width: 500px;
+  }
+  .pic-disc div{
+    padding-bottom: 20px;
+  }
+  .text-h3{
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .pic-disc img {
+    width: 300px;
+  }
+}
