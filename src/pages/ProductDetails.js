@@ -86,6 +86,10 @@ const ProductDetail = () => {
     return <div>Loading...</div>;
   }
 
+  const handleCheckout = () => {
+    navigate("/checkout", { state: { totalPrice, cartProducts } }); // الانتقال إلى صفحة الدفع وتمرير totalPrice
+  };
+
   return (
     <>
       <Navbar backgroundColor="#ffff" />
@@ -201,7 +205,9 @@ const ProductDetail = () => {
                 <button className="view-cart-button" onClick={handeleViewCart}>
                   View Cart
                 </button>
-                <button className="checkout-button">Checkout</button>
+                <button className="checkout-button" onClick={handleCheckout}>
+                  Checkout
+                </button>
               </div>
             </div>
           </div>

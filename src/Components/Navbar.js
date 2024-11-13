@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = ({ backgroundColor = "#FBEBB5" }) => {
@@ -20,10 +20,10 @@ const Navbar = ({ backgroundColor = "#FBEBB5" }) => {
         >
         <li><Link to="/">Home</Link></li>
         <li><Link to="/Shop">Shop</Link></li>
-        <li><Link to="">About</Link></li>
+        <li><Link to="/Blogs">Blogs</Link></li>
         <li><Link to="/Contact">Contact</Link></li>
         <div className="icons">
-          <li><Link><i className="fa-regular fa-user"></i></Link></li>
+          <li><Link to="/LogIn"><i className="fa-regular fa-user"></i></Link></li>
           <li><Link><i className="fa-solid fa-magnifying-glass"></i></Link></li>
           <li><Link><i className="fa-regular fa-heart"></i></Link></li>
           <li><Link to="/Cart"><i className="fa-solid fa-cart-plus"></i></Link></li>

@@ -1,6 +1,9 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import SctionOneShop from "../ComponentForShop/SctionOneShop";
+import SectionOneContact from "../ComponentForContact/SectionOneContact";
+import SectionThreeShop from "../ComponentForShop/SectionThreeShop";
+import Footer from "../Components/Footer";
 
 const Contact = () => {
   return (
@@ -12,6 +15,12 @@ const Contact = () => {
           Home <i class="fa-solid fa-angles-right"> </i>Contact
         </span>
       </SctionOneShop>
+
+      <SectionOneContact/>
+
+      <SectionThreeShop/>
+
+      <Footer/>
     </>
   );
 };

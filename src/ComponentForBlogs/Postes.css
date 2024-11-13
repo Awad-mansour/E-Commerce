@@ -1,0 +1,49 @@
+/* Styles for the blog posts */
+.blog-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post {
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+}
+
+.post-info {
+  padding: 20px ;
+  text-align: start;
+}
+
+.post-meta {
+  font-size: 0.9em;
+  color: #888;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.post-meta span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.read-more {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}

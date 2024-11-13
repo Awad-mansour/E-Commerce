@@ -1,0 +1,106 @@
+/* التصميم العام */
+.checkout-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* إضافة flex-wrap لجعل العناصر تتكدس في سطرين على الشاشات الصغيرة */
+}
+
+.billing-details,
+.checkout-summary {
+  width: 48%;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.billing-form input,
+.billing-form select,
+.billing-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.name-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.payment-method {
+  margin-top: 20px;
+}
+
+.place-order-button {
+  width: 60%;
+  padding: 15px;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.264);
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+.place-order-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.privacy-policy {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+ .total h3{
+  color: #B88E2F;
+ }
+
+/* استجابة التصميم للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .checkout-container {
+    flex-direction: column; /* تحويل العرض إلى عمودي على الشاشات الصغيرة */
+  }
+
+  .billing-details,
+  .checkout-summary {
+    width: 100%; /* عرض كامل */
+    margin-bottom: 20px; /* إضافة مسافة بين الأقسام */
+  }
+
+  .name-fields {
+    flex-direction: column; /* جعل حقول الاسم تتكدس عموديًا */
+    gap: 0;
+  }
+}
+
+/* تحسينات للشاشات الأصغر من 480px (مثل الهواتف) */
+@media (max-width: 480px) {
+  .checkout-container {
+    padding: 10px; /* تقليل الحواف ليتناسب مع الشاشات الصغيرة جدًا */
+  }
+
+  .place-order-button {
+    font-size: 14px; /* تصغير حجم الخط للزر */
+    padding: 12px;
+  }
+}

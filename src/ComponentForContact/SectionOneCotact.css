@@ -1,0 +1,110 @@
+
+
+.head-contact{
+  margin-top: 50px;
+  text-align: center;
+}
+.head-contact p{
+  opacity: 60%;
+  font-size: 20px;
+  padding: 40px 100px;
+}
+.head-contact h1{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.big-div-contact{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-div-contact div{
+  padding: 15px 0;
+}
+
+.info-submit label{
+  font-size: 20px;
+}
+.info-submit input{
+  padding: 20px;
+  min-width: 400px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.448);
+}
+.info-submit textarea{
+  padding: 20px;
+  min-width: 400px;
+  border-radius: 10px;
+}
+.info-submit button{
+  width: 180px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-size: 20px;
+}
+.info-submit button:hover{
+  background-color: rgb(5, 136, 218);
+}
+
+
+@media (max-width: 768px) {
+  .big-div-contact {
+    display: block;
+  
+  }
+  .big-div-contact .main-div-contact div{
+    text-align: center;
+  }
+
+  .big-div-contact .info-submit {
+    text-align: center;
+  }
+  .big-div-contact .info-submit input{
+    min-width: 400px;
+  }
+  .big-div-contact .info-submit textarea{
+    min-width: 400px;
+
+  }
+
+  .head-contact p{
+    padding: 0;
+    font-size: 18px;
+  }
+  .head-contact h1{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .big-div-contact {
+    display: block;
+  
+  }
+  .big-div-contact .main-div-contact div{
+    text-align: center;
+  }
+
+  .big-div-contact .info-submit {
+    text-align: center;
+  }
+  .big-div-contact .info-submit input{
+    min-width: 300px;
+  }
+  .big-div-contact .info-submit textarea{
+    min-width: 300px;
+
+  }
+
+  .head-contact p{
+    padding: 0;
+    font-size: 18px;
+  }
+  .head-contact h1{
+    font-size: 30px;
+  }
+}

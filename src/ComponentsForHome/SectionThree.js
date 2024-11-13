@@ -1,8 +1,15 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import axios from "axios";
 import "./SectionThree.css";
 
 const SectionThree = () => {
+
+  const navigate = useNavigate(); 
+  const handleNavigate = () => {
+    navigate("/Shop");
+  };
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -46,7 +53,7 @@ const SectionThree = () => {
               </div>
             ))}
           </div>
-          <h3>View More</h3>
+          <h3 onClick={handleNavigate}>View More</h3>
         </div>
       )}
     </>

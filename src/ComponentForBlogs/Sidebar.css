@@ -1,0 +1,87 @@
+/* Sidebar Container */
+.sidebar {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: #333;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 8px 12px;
+}
+
+.search-box input[type="text"] {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.search-box input[type="text"]::placeholder {
+  color: #888;
+}
+
+.search-box svg {
+  color: #888;
+  font-size: 16px;
+}
+
+/* Categories Section */
+.categories h4, .recent-posts h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.categories ul, .recent-posts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categories li {
+  display: flex;
+  justify-content: space-between;
+  color: #888;
+  font-size: 14px;
+  padding: 6px 0;
+}
+
+/* Recent Posts Section */
+.recent-posts ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.recent-posts ul li img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.recent-posts ul li div {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-posts ul li div span:first-child {
+  font-size: 14px;
+  color: #333;
+}
+
+.recent-posts ul li div span:last-child {
+  font-size: 12px;
+  color: #888;
+}

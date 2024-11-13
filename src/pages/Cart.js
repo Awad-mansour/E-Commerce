@@ -1,4 +1,3 @@
-// src/Cart/Cart.js
 import React from "react";
 import "./Cart.css";
 import { useSelector, useDispatch } from "react-redux";
@@ -7,14 +6,20 @@ import SectionOneShop from "../ComponentForShop/SctionOneShop";
 import { removeFromCart } from "../ComponentFor Cart/CartSlice";
 import SectionThreeShop from "../ComponentForShop/SectionThreeShop";
 import Footer from "../Components/Footer";
+import { useNavigate } from "react-router-dom"; // استيراد useNavigate
 
 const Cart = () => {
-  const cartProducts = useSelector((state) => state.cart.cartProducts); // قراءة المنتجات من السلة
-  const totalPrice = useSelector((state) => state.cart.totalPrice); // قراءة السعر الإجمالي
+  const cartProducts = useSelector((state) => state.cart.cartProducts);
+  const totalPrice = useSelector((state) => state.cart.totalPrice);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const handleDelete = (id) => {
-    dispatch(removeFromCart(id)); // حذف المنتج من السلة باستخدام الإجراء
+    dispatch(removeFromCart(id));
+  };
+
+  const handleCheckout = () => {
+    navigate("/checkout", { state: { totalPrice,cartProducts } }); // الانتقال إلى صفحة الدفع وتمرير totalPrice
   };
 
   return (
@@ -44,7 +49,7 @@ const Cart = () => {
                     onClick={() => handleDelete(item.id)}
                     className="delete-button"
                   >
-                    <i class="fa-solid fa-trash"></i>
+                    <i className="fa-solid fa-trash"></i>
                   </button>
                 </div>
               </div>
@@ -55,7 +60,9 @@ const Cart = () => {
         <div className="cart-footer-carts">
           <h1>Cart Totals</h1>
           <h3>Total Price: Rs. {totalPrice}</h3>
-          <button className="checkout-button-cart">Checkout</button>
+          <button className="checkout-button-cart" onClick={handleCheckout}>
+            Checkout
+          </button>
         </div>
       </div>
 

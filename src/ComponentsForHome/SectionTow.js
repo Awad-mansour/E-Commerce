@@ -1,7 +1,16 @@
 import React from "react";
 import "./SectionTow.css";
+import { useNavigate } from "react-router-dom";
+
 
 const SectionTow = () => {
+
+  
+  const navigate = useNavigate(); 
+  const handleNavigate = () => {
+    navigate("/Shop");
+  };
+  
   return (
     <>
       <div className="section-tow-home ">
@@ -11,7 +20,7 @@ const SectionTow = () => {
             alt=""
           />
           <h3>Side Table</h3>
-          <p>View More</p>
+          <p onClick={handleNavigate}>View More</p>
         </div>
         <div className="sec-tow">
           <img
@@ -19,7 +28,7 @@ const SectionTow = () => {
             alt=""
           />
           <h3>Side Table</h3>
-          <p>View More</p>
+          <p onClick={handleNavigate}>View More</p>
         </div>
       </div>
     </>

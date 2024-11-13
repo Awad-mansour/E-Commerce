@@ -1,7 +1,14 @@
 import React from "react";
 import "./SectionBlog.css";
+import { useNavigate } from "react-router-dom";
+
 
 const SectionBlog = () => {
+
+  const navigate = useNavigate(); 
+  const handleNavigate = () => {
+    navigate("/Blogs");
+  };
   return (
     <>
       <div className="main-d">
@@ -13,7 +20,7 @@ const SectionBlog = () => {
           <div>
             <img src={require("../images/Rectangle 13 (1).png")} alt="" />
             <p>Going all-in with millennial design</p>
-            <span className="read-more">Read More</span>
+            <span className="read-more" onClick={handleNavigate}>Read More</span>
             <br />
             <span>
               <i class="fa-regular fa-clock"></i>5 min{" "}
@@ -25,7 +32,7 @@ const SectionBlog = () => {
           <div>
             <img src={require("../images/Rectangle 14.png")} alt="" />
             <p>Going all-in with millennial design</p>
-            <span className="read-more">Read More</span>
+            <span className="read-more" onClick={handleNavigate}>Read More</span>
             <br />
             <span>
               <i class="fa-regular fa-clock"></i>5 min{" "}
@@ -37,7 +44,7 @@ const SectionBlog = () => {
           <div>
             <img src={require("../images/Rectangle 15.png")} alt="" />
             <p>Going all-in with millennial design</p>
-            <span className="read-more">Read More</span>
+            <span className="read-more" onClick={handleNavigate}>Read More</span>
             <br />
             <span>
               <i class="fa-regular fa-clock"></i>5 min{" "}
@@ -47,7 +54,7 @@ const SectionBlog = () => {
             </span>
           </div>
         </div>
-        <p className="pra-view">View All Post</p>
+        <p className="pra-view" onClick={handleNavigate}>View All Post</p>
       </div>
     </>
   );
